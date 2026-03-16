@@ -1,0 +1,49 @@
+{
+  "count": 50,
+  "page": 1,
+  "per_page": 2,
+  "_links": {
+    "self": {
+      "href": "/api/books?page=1"
+    },
+    "next": {
+      "href": "/api/books?page=2"
+    },
+    "first": {
+      "href": "/api/books?page=1"
+    },
+    "last": {
+      "href": "/api/books?page=25"
+    }
+  },
+  "_embedded": {
+    "books": [
+      {
+        "id": 1,
+        "title": "Belajar REST API",
+        "author": "Raya",
+        "_links": {
+          "self": {
+            "href": "/api/books/1"
+          },
+          "collection": {
+            "href": "/api/books"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "title": "Hypermedia in REST",
+        "author": "Raya",
+        "_links": {
+          "self": {
+            "href": "/api/books/2"
+          },
+          "collection": {
+            "href": "/api/books"
+          }
+        }
+      }
+    ]
+  }
+}
